@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+canvas {
+  width: 80%; /* Ajusta el tamaño al 80% del ancho de la pantalla */
+  height: 80vh; /* Ajusta la altura al 80% de la altura de la ventana */
+}
