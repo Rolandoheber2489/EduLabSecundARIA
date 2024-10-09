@@ -13,6 +13,12 @@ _EduLab SecundARIA_ es un laboratorio virtual que utiliza **realidad aumentada (
 
 ## Instalación
 
+## Wireframing
+
+Interfaz con la disposición básica de elementos y funcionalidades, permitiendo visualizar el flujo de navegación y la organización de contenido.
+[![index.png](https://i.postimg.cc/mDY7XNV9/index.png)](https://postimg.cc/473KncD4)
+
+
 ### Clonar el repositorio
 
 ```bash
