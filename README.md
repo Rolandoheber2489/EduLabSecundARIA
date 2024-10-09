@@ -23,3 +23,26 @@ Interfaz con la disposición básica de elementos y funcionalidades, permitiendo
 
 ```bash
 git clone https://github.com/tu-usuario/EduLabSecundARIA.git
+
+# Requisitos
+Antes de ejecutar el proyecto, asegúrate de tener instalado:
+
+- [Node.js](https://nodejs.org/) (versión 14 o superior)
+- [npm](https://www.npmjs.com/) (incluido con Node.js)
+
+## Instalación
+
+1. **Clona el repositorio:**
+
+   ```bash
+   git clone https://github.com/tu_usuario/tu_repositorio.git
+   cd tu_repositorio
+2. **Instala las dependencias:**
+```bash
+  npm install
+**USO**
+Para iniciar el proyecto en modo desarrollo, ejecuta:
+```bash
+npm start
+
+Esto abrirá el laboratorio virtual en tu navegador predeterminado. Por lo general en [http://localhost:3000]
