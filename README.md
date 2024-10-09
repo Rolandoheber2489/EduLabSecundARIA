@@ -23,6 +23,8 @@ Interfaz con la disposición básica de elementos y funcionalidades, permitiendo
 
 ```bash
 git clone https://github.com/tu-usuario/EduLabSecundARIA.git
+```
+
 
 # Requisitos
 Antes de ejecutar el proyecto, asegúrate de tener instalado:
@@ -37,12 +39,39 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
    ```bash
    git clone https://github.com/tu_usuario/tu_repositorio.git
    cd tu_repositorio
+   ```
+
+
 2. **Instala las dependencias:**
 ```bash
   npm install
+```
 **USO**
 Para iniciar el proyecto en modo desarrollo, ejecuta:
 ```bash
 npm start
+```
 
 Esto abrirá el laboratorio virtual en tu navegador predeterminado. Por lo general en [http://localhost:3000]
+
+## Estructura del Proyecto
+- src/: Contiene el código fuente de la aplicación.
+ 	- App.js: Componente principal que integra la escena 3D.
+ 	- ThreeScene.js: Componente que maneja la renderización de la escena 3D.
+	- AtomScene.js: Componente que muestra el modelo atómico de carbono.
+- public/: Contiene archivos estáticos como index.html.
+## Descripción de Funcionalidades
+- Visualización de modelos atómicos interactivos.
+- Trayectorias de órbitas electrónicas marcadas.
+- Información detallada sobre los niveles de energía del electrón.
+
+## Contribuciones
+Si deseas contribuir al proyecto, por favor, sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama para tu característica o corrección de errores.
+3. Realiza tus cambios y haz un commit.
+4. Envía un pull request.
+
+## Licencia
+Este proyecto está bajo la Licencia MIT.
