@@ -1,0 +1,13 @@
+#Logo {
+    width: 50px;  /* Ajusta el tamaño según lo necesites */
+    height: 50px; /* Ajusta el tamaño según lo necesites */
+    border-radius: 10px; /* Valor bajo para bordes suavemente redondeados */
+    object-fit: cover; /* Para mantener la proporción de la imagen */
+}
+
+/* Ajustar la posición de las opciones del menú de navegación */
+.navbar-nav {
+    margin-right: 240px; /* Ajusta este valor para mover las opciones a la derecha */
+}
+
+/* Aumentar el margen entre los elementos de la lista de navegación */
