@@ -19,7 +19,7 @@ Interfaz con la disposición básica de elementos y funcionalidades, permitiendo
 [![index.png](https://i.postimg.cc/mDY7XNV9/index.png)](https://postimg.cc/473KncD4)
 
 
-FIGMA [WIREFRAMING](URL_DE_DOCUMENTACION).
+FIGMA [WIREFRAMING](https://www.figma.com/files/team/1304555437007082447/recents-and-sharing/recently-viewed?fuid=1304555434543892721).
 
 
 
