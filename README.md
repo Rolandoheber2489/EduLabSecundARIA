@@ -19,6 +19,10 @@ Interfaz con la disposición básica de elementos y funcionalidades, permitiendo
 [![index.png](https://i.postimg.cc/mDY7XNV9/index.png)](https://postimg.cc/473KncD4)
 
 
+FIGMA [WIREFRAMING](URL_DE_DOCUMENTACION).
+
+
+
 ### Clonar el repositorio
 
 ```bash
