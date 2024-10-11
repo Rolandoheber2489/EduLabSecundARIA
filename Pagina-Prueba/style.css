@@ -5,9 +5,36 @@
     object-fit: cover; /* Para mantener la proporción de la imagen */
 }
 
+
 /* Ajustar la posición de las opciones del menú de navegación */
 .navbar-nav {
     margin-right: 240px; /* Ajusta este valor para mover las opciones a la derecha */
 }
 
-/* Aumentar el margen entre los elementos de la lista de navegación */
+.custom-navbar {
+    background-color: #8fdaf8; /* Tono celeste claro */
+}
+
+body {
+    position: relative;
+}
+
+body::before {
+    content: "";
+    background-image: url('imagenes/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.5; /* Ajusta la transparencia de la imagen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Envía la imagen detrás del contenido */
+}
+
+
+
+

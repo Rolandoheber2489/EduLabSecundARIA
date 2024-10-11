@@ -14,10 +14,10 @@
 <body>
 
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="Logo.png"  id="Logo"alt="Logo de Edulab" width="50" height="50" class="d-inline-block align-text-center">
+                <img src="imagenes/Logo.png"  id="Logo"alt="Logo de Edulab" width="50" height="50" class="d-inline-block align-text-center">
                 Edulab SecundARIA
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,57 +43,87 @@
     </nav>
 
     <!-- Contenido principal -->
-    <div class="container text-center my-5">
+    <div class="container text-center my-5 bg-image">
         <!-- Título -->
         <h1 class="display-4">Laboratorio Virtual</h1>
         <p class="lead">Espacio educativo que integra Realidad Aumentada e Inteligencia Artificial para experiencias interactivas en Matemática, Física y Química.</p>
-
+    
         <!-- Botón central -->
         <a href="aula.html" class="btn btn-dark btn-lg my-4">Unirse al aula</a>
-
-      
-       <!-- Tarjetas (Cards) para materias -->
-<div class="row">
-  <div class="col-md-4">
-      <div class="card">
-          <a href="Pag-matematicas.html"> <!-- Enlace para Matemática -->
-              <img src="matematicas.png" class="card-img-top" alt="Matemática">
-          </a>
-          <div class="card-body">
-              <h5 class="card-title">Laboratorio para <strong>Matemática</strong></h5>
-          </div>
-      </div>
-  </div>
-  <div class="col-md-4">
-      <div class="card">
-          <a href="Pag-fisica.html"> <!-- Enlace para Física -->
-              <img src="física.png" class="card-img-top" alt="Física">
-          </a>
-          <div class="card-body">
-              <h5 class="card-title">Laboratorio para <strong>Física</strong></h5>
-          </div>
-      </div>
-  </div>
-  <div class="col-md-4">
-      <div class="card">
-          <a href="Pag-quimica.html"> <!-- Enlace para Química -->
-              <img src="quimica.png" class="card-img-top" alt="Química">
-          </a>
-          <div class="card-body">
-              <h5 class="card-title">Laboratorio para <strong>Química</strong></h5>
-          </div>
-      </div>
-  </div>
-</div>
-
+    
+        <!-- Tarjetas (Cards) para materias -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="Pag-matematicas.html"> <!-- Enlace para Matemática -->
+                        <img src="imagenes/matematicas.png" class="card-img-top" alt="Matemática">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Laboratorio para <strong>Matemática</strong></h5>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="Pag-fisica.html"> <!-- Enlace para Física -->
+                        <img src="imagenes/física.png" class="card-img-top" alt="Física">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Laboratorio para <strong>Física</strong></h5>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="Pag-quimica.html"> <!-- Enlace para Química -->
+                        <img src="imagenes/quimica.png" class="card-img-top" alt="Química">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Laboratorio para <strong>Química</strong></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
 
     <!-- Pie de página -->
-    <footer class="bg-light text-center py-3">
-        <div class="container">
-            <p class="mb-0">Ayuda</p>
+    <footer class="bg-dark text-center text-white py-3">
+        <!-- Derechos reservados -->
+        <p>&copy; 2024 Equipo Edulab. Todos los derechos reservados.</p>
+    
+        <!-- Navegación de enlaces informativos -->
+        <nav>
+            <a href="/sobre-nosotros">Sobre Nosotros</a> |
+            <a href="/contacto">Contacto</a> |
+            <a href="/terminos">Términos de Servicio</a> |
+            <a href="/privacidad">Política de Privacidad</a>
+        </nav>
+    
+        <!-- Enlaces a redes sociales -->
+        <div class="my-2">
+            <a href="https://twitter.com/TuCuenta" target="_blank">Twitter</a> |
+            <a href="https://facebook.com/TuCuenta" target="_blank">Facebook</a> |
+            <a href="https://instagram.com/TuCuenta" target="_blank">Instagram</a>
+        </div>
+    
+        <!-- Información de contacto -->
+        <div class="my-2">
+            <p>Contacto: contacto@gmail.com | +123 456 7890</p>
+        </div>
+    
+        <!-- Formulario de suscripción -->
+        <div class="my-3">
+            <form action="/suscripcion" method="post">
+                <label for="email">Suscríbete a nuestro boletín:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Suscribirse</button>
+            </form>
         </div>
     </footer>
+    
 
     <!-- Enlaces a Bootstrap 5 JS y Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
