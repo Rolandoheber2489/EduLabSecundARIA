@@ -16,8 +16,9 @@ _EduLab SecundARIA_ es un laboratorio virtual que utiliza **realidad aumentada (
 ## Wireframing
 
 Interfaz con la disposición básica de elementos y funcionalidades, permitiendo visualizar el flujo de navegación y la organización de contenido.
-[![index.png](https://i.postimg.cc/mDY7XNV9/index.png)](https://postimg.cc/473KncD4){width=300}
+[![index.png](https://i.postimg.cc/mDY7XNV9/index.png)](https://postimg.cc/473KncD4)
 [![Laborario.png](https://i.postimg.cc/Fs5NZ1xX/Laboratorio.png)](https://postimg.cc/grDCcz5g)
+[![iniciar.png](https://i.postimg.cc/Tw5qTtSS/siguiente.png)](https://postimg.cc/cgZ8mBdM)
 
 
 FIGMA [WIREFRAMING](https://www.figma.com/design/ShiY2umIUGWGlU9Bnhqs2n/Untitled?node-id=0-1&node-type=canvas&t=gG1rJaiKyHmqpoDA-0).
