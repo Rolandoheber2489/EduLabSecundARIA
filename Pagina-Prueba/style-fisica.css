@@ -1,0 +1,6 @@
+.background-image {
+    background-image: url('imagenes/Gargantua.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw; 
+  }
