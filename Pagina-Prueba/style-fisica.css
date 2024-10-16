@@ -1,6 +1,22 @@
-.background-image {
-    background-image: url('imagenes/Gargantua.png');
-    background-size: cover;
-    height: 100vh;
-    width: 100vw; 
-  }
+.custom-navbar {
+  background-color: #8fdaf8; /* Tono celeste claro */
+}
+
+#Logo {
+  width: 50px;  /* Ajusta el tamaño según lo necesites */
+  height: 50px; /* Ajusta el tamaño según lo necesites */
+  border-radius: 10px; /* Valor bajo para bordes suavemente redondeados */
+  object-fit: cover; /* Para mantener la proporción de la imagen */
+}
+
+#modelo3D {
+  width: 100%;
+  height: 400px;
+  background-color: #eaeaea;
+  transition: height 1s ease; /* Cambia la duración de la animación según lo desees */
+  overflow: hidden; /* Para ocultar el contenido al iniciar */
+}
+
+.expand {
+  height: 600px; /* Cambia la altura según lo que desees para la expansión */
+}
