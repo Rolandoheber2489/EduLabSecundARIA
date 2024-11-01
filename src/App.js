@@ -5,10 +5,9 @@ import Home from './Home';
 import AulaVirtual from './AulaVirtual';
 import Matematicas from './Matematicas';
 import Fisica from './Fisica';
-import Quimica from './Quimica';
+import QuimicaIntro from './QuimicaIntro';
 import ZapparARScene from './Componentes/ZapparARScene'; // Importa tu componente
-
-
+import Quimica from './Quimica';
 
 
 function App() {
@@ -22,7 +21,8 @@ function App() {
                 <Route path="/aula" element={<AulaVirtual />} /> {/* Ruta para el aula virtual */}
                 <Route path="/matematicas" element={<Matematicas />} /> {/* Ruta para la página de Matemáticas */}
                 <Route path="/fisica" element={<Fisica />} /> {/* Ruta para la página de Física */}
-                <Route path="/quimica" element={<Quimica />} /> {/* Ruta para la página de Quimica */}
+                <Route path="/QuimicaIntro" element={<QuimicaIntro />} /> {/* Ruta para la página de Quimica */}
+                <Route path="/Quimica" element={<Quimica />} /> {/* Ruta para la página principal */}
                 <Route path="/zappar" element={<ZapparARScene />} /> {/* Ruta para la escena WebXR */}  
             </Routes>
         </Router>
