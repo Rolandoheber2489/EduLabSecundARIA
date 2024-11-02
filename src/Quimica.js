@@ -5,7 +5,7 @@ import AtomScene from './AtomScene';
 
 const Quimica = () => {
     return (
-        <div>
+        <div className='AtomScene'>
             <h1>Esta es la página de Quimica</h1>
             <button>
                 <Link to="/">Volver</Link>
