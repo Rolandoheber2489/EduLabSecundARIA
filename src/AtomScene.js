@@ -4,6 +4,7 @@ import { OrbitControls, Text, Line, Sky } from '@react-three/drei';
 import { extend } from '@react-three/fiber';
 import { TextGeometry } from 'three-stdlib';
 
+
 extend({ TextGeometry }); // Registra TextGeometry
 
 const Nucleus = () => (
@@ -50,7 +51,7 @@ const Orbit = ({ distance }) => {
   }).flat();
 
   return (
-    <Line points={points} color="green" lineWidth={2} dashed={true} />
+    <Line points={points} color="green" lineWidth={1} dashed={true} />
   );
 };
 
@@ -75,8 +76,8 @@ const AtomScene = () => {
   ];
 
   return (
-    <div style={{ width: '100%', height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-      <Canvas style={{ width: '80%', height: '80%' }} camera={{ position: [0, 5, 10] }}>
+    <div style={{ width: '100%', height: '100vh', display: 'flex', /*flexDirection: 'column'*/ alignItems: 'center', justifyContent: 'flex' }}>
+      <Canvas style={{ width: '100%', height: '100%' }} camera={{ position: [0, 5, 10] }}>
         <ambientLight intensity={0.5} />
         <Sky sunPosition={[100, 20, 100]} />
         <Nucleus />
@@ -92,7 +93,7 @@ const AtomScene = () => {
 
       {/* Mostrar la información del electrón seleccionado */}
       {selectedElectron && (
-        <div style={{ marginTop: '20px', textAlign: 'center', color: 'white', backgroundColor: '#333', padding: '10px', borderRadius: '8px' }}>
+        <div style={{ marginTop: '20px', textAlign: 'justify', color: 'white', backgroundColor: '#333', padding: '10px', borderRadius: '8px' }}>
           <h2>Información sobre el electrón</h2>
           <p>{electronInfo[selectedElectron]}</p>
         </div>

@@ -17,7 +17,7 @@ body, html {
   display: flex; /* Usar flexbox para centrar */
   justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente */
-  background-color: #f0f0f0; /* Color de fondo (opcional) */
+  background-color: #160124; /* Color de fondo (opcional) */
 
   zoom: 1; /* Esto restablece el zoom a 100% */
   min-width: 320px; 
@@ -29,3 +29,8 @@ body, html {
   align-items: center; /* Centrar elementos dentro del contenedor */
 }
 
+.AtomScene{
+  display: flexbox;
+  width: 100vw;
+  height: 100vh;
+}

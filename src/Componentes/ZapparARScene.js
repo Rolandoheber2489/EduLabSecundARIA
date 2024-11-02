@@ -81,7 +81,7 @@ const ZapparARScene = () => {
 
   return (
     <div style={{ display: 'flex' }}>
-      <ZapparCanvas style={{ width: '100%', height: '100vh' }}>
+      <ZapparCanvas style={{ width: '80%', height: '80vh' }}>
         <ZapparCamera />
         {/*<GestureControl />*/}
         <ambientLight intensity={2} />
@@ -92,10 +92,10 @@ const ZapparARScene = () => {
 
       </ZapparCanvas>
       <div style={{
-          position: 'absolute',
+          position: 'flex',
           bottom: 20,
           right: 20,
-          backgroundColor: 'white',
+          backgroundColor: 'green',
           padding: 10,
           borderRadius: '5px',
           boxShadow: '0 2px 8px rgba(0, 0, 0, 0.2)',
@@ -124,7 +124,7 @@ const ZapparARScene = () => {
           </label>
           <label>
             Y:
-            <input type="range" min={-180} max={180} step={1} value={rotation[1]} onChange={(e) => handleRotationChange(1, parseFloat(e.target.value))} />
+            <inpu      t type="range" min={-180} max={180} step={1} value={rotation[1]} onChange={(e) => handleRotationChange(1, parseFloat(e.target.value))} />
           </label>
           <label>
             Z:
@@ -133,7 +133,7 @@ const ZapparARScene = () => {
         </div>
         <div>
           <h4>Escala</h4>
-          <input type="range" min={0.1} max={8} step={0.1} value={scale} onChange={(e) => handleScaleChange(parseFloat(e.target.value))} />
+          <input type="range" min={1} max={15} step={1} value={scale} onChange={(e) => handleScaleChange(parseFloat(e.target.value))} />
         </div>
       </div>
     </div>
