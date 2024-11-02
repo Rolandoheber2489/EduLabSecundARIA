@@ -13,7 +13,7 @@ const navItems = [
 const subjects = [
     { to: "/matematicas", img: './Images/matematicas.png', title: "Matemática" },
     { to: "/fisica", img: './Images/física.png', title: "Física" },
-    { to: "/quimica", img: './Images/quimica.png', title: "Química" }
+    { to: "/QuimicaIntro", img: './Images/quimica.png', title: "Química" }
 ];
 
 const Navbar = () => (
