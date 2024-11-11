@@ -34,3 +34,12 @@ body, html {
   width: 100vw;
   height: 100vh;
 }
+
+.card{
+  display: flexbox;
+  border-radius: 5px;
+  width: 250 px;
+  height: 325px;
+  background-color: aqua;
+  
+}

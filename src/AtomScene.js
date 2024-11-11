@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Text, Line, Sky } from '@react-three/drei';
-import { extend } from '@react-three/fiber';
-import { TextGeometry } from 'three-stdlib';
-
+import React, { useState } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { OrbitControls, Text, Line, Sky } from "@react-three/drei";
+import { extend } from "@react-three/fiber";
+import { TextGeometry } from "three-stdlib";
 
 extend({ TextGeometry }); // Registra TextGeometry
 
@@ -24,8 +23,10 @@ const Electron = ({ size, distance, speed, energyLevel, onClick }) => {
   const ref = React.useRef();
 
   useFrame(({ clock }) => {
-    ref.current.position.x = distance * Math.cos(clock.getElapsedTime() * speed);
-    ref.current.position.z = distance * Math.sin(clock.getElapsedTime() * speed);
+    ref.current.position.x =
+      distance * Math.cos(clock.getElapsedTime() * speed);
+    ref.current.position.z =
+      distance * Math.sin(clock.getElapsedTime() * speed);
   });
 
   return (
@@ -46,20 +47,18 @@ const Orbit = ({ distance }) => {
     return [
       distance * Math.cos(angle),
       0, // En el plano XY
-      distance * Math.sin(angle)
+      distance * Math.sin(angle),
     ];
   }).flat();
 
-  return (
-    <Line points={points} color="green" lineWidth={1} dashed={true} />
-  );
+  return <Line points={points} color="green" lineWidth={1} dashed={true} />;
 };
 
 const AtomScene = () => {
   const [selectedElectron, setSelectedElectron] = useState(null);
   const electronInfo = {
-    "1": "Nivel de energía 1 (K): 2 electrones.",
-    "2": "Nivel de energía 2 (L): 4 electrones."
+    1: "Nivel de energía 1 (K): 2 electrones.",
+    2: "Nivel de energía 2 (L): 4 electrones.",
   };
 
   const handleElectronClick = (energyLevel) => {
@@ -76,8 +75,19 @@ const AtomScene = () => {
   ];
 
   return (
-    <div style={{ width: '100%', height: '100vh', display: 'flex', /*flexDirection: 'column'*/ alignItems: 'center', justifyContent: 'flex' }}>
-      <Canvas style={{ width: '100%', height: '100%' }} camera={{ position: [0, 5, 10] }}>
+    <div
+      style={{
+        width: "100%",
+        height: "100vh",
+        display: "flex",
+        /*flexDirection: 'column'*/ alignItems: "center",
+        justifyContent: "flex",
+      }}
+    >
+      <Canvas
+        style={{ width: "100%", height: "100%" }}
+        camera={{ position: [0, 5, 10] }}
+      >
         <ambientLight intensity={0.5} />
         <Sky sunPosition={[100, 20, 100]} />
         <Nucleus />
@@ -93,7 +103,16 @@ const AtomScene = () => {
 
       {/* Mostrar la información del electrón seleccionado */}
       {selectedElectron && (
-        <div style={{ marginTop: '20px', textAlign: 'justify', color: 'white', backgroundColor: '#333', padding: '10px', borderRadius: '8px' }}>
+        <div
+          style={{
+            marginTop: "20px",
+            textAlign: "justify",
+            color: "white",
+            backgroundColor: "#333",
+            padding: "10px",
+            borderRadius: "8px",
+          }}
+        >
           <h2>Información sobre el electrón</h2>
           <p>{electronInfo[selectedElectron]}</p>
         </div>
