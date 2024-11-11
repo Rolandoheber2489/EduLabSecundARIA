@@ -19,7 +19,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} /> {/* Ruta para la página principal */}
                 <Route path="/aula" element={<AulaVirtual />} /> {/* Ruta para el aula virtual */}
-                <Route path="/matematicas" element={<Matematicas />} /> {/* Ruta para la página de Matemáticas */}
+                <Route path="/MatematicasIntro" element={<MatematicasIntro />} /> {/* Ruta para la página de MatemáticasIntro */}
+                <Route path="/Matematicas" element={<Matematicas />} /> {/* Ruta para la página de Matemáticas */}
                 <Route path="/fisica" element={<Fisica />} /> {/* Ruta para la página de Física */}
                 <Route path="/QuimicaIntro" element={<QuimicaIntro />} /> {/* Ruta para la página de Quimica */}
                 <Route path="/Quimica" element={<Quimica />} /> {/* Ruta para la página principal */}

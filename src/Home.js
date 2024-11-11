@@ -11,7 +11,7 @@ const navItems = [
 ];
 
 const subjects = [
-    { to: "/matematicas", img: './Images/matematicas.png', title: "Matemática" },
+    { to: "/MatematicasIntro", img: './Images/matematicas.png', title: "Matemáticas" },
     { to: "/fisica", img: './Images/física.png', title: "Física" },
     { to: "/QuimicaIntro", img: './Images/quimica.png', title: "Química" }
 ];
