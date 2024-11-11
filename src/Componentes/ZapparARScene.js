@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { ZapparCanvas, ZapparCamera } from "@zappar/zappar-react-three-fiber";
 import { useGLTF } from "@react-three/drei"; // Importamos useGLTF
+import "/Users/belen/Desktop/Rolando/seminario/EduLab-SecundARIA/edulab-secundaria/src/Estilos/Paginas.css";
 //import GestureControl from './GestureControl';
 
 const Model = ({ position, rotation, scale }) => {
@@ -80,8 +81,8 @@ const ZapparARScene = () => {
   }, []);
 
   return (
-    <div style={{ display: "flex" }}>
-      <ZapparCanvas style={{ width: "80%", height: "80vh" }}>
+    <div className="zapparScene">
+      <ZapparCanvas>
         <ZapparCamera />
         {/*<GestureControl />*/}
         <ambientLight intensity={2} />
@@ -94,17 +95,7 @@ const ZapparARScene = () => {
           scale={[scale, scale, scale]}
         />
       </ZapparCanvas>
-      <div
-        style={{
-          position: "flex",
-          bottom: 20,
-          right: 20,
-          backgroundColor: "green",
-          padding: 10,
-          borderRadius: "5px",
-          boxShadow: "0 2px 8px rgba(0, 0, 0, 0.2)",
-        }}
-      >
+      <div className="menu">
         <h3>Menú de Configuración</h3>
         <div>
           <h4>Posición</h4>

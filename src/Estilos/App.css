@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* styles.css */
+body,
+html {
+  margin: 0; /* Eliminar márgenes por defecto */
+  padding: 0; /* Eliminar padding por defecto */
+  height: 100%; /* Asegurar que el cuerpo y el html ocupen toda la altura */
+  display: flex; /* Usar flexbox para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  background-color: #f6f0fa; /* Color de fondo (opcional) */
+
+  zoom: 1; /* Esto restablece el zoom a 100% */
+  min-width: 320px;
+}
+
+.card {
+  display: table-row;
+  border-radius: 5px;
+  width: 300px;
+  height: 300x;
+  background-color: white;
+}
+
+.navbar {
+  display: flexbox;
+  margin-top: 200px;
+  border-radius: 10px;
+  background-color: white;
+}

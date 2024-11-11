@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#Logo {
+  width: 50px; /* Ajusta el tamaño según lo necesites */
+  height: 50px; /* Ajusta el tamaño según lo necesites */
+  border-radius: 10px; /* Valor bajo para bordes suavemente redondeados */
+  object-fit: cover; /* Para mantener la proporción de la imagen */
+}
+
+/* Ajustar la posición de las opciones del menú de navegación */
+.navbar-nav {
+  margin-right: 240px; /* Ajusta este valor para mover las opciones a la derecha */
+}
+
+/* Aumentar el margen entre los elementos de la lista de navegación */
