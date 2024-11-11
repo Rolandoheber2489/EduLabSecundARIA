@@ -46,7 +46,7 @@ const SubjectCard = ({ to, img, title }) => (
                 <img src={process.env.PUBLIC_URL + img} className="card-img-top" alt={title} />
             </Link>
             <div className="card-body">
-                <h5 className="card-title">Laboratorio para <strong>{title}</strong></h5>
+                <h5 className="card-title">Laboratorio <strong>{title}</strong></h5>
             </div>
         </div>
     </div>
