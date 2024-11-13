@@ -1,0 +1,97 @@
+[33mcommit 951d221a1b9778effba1c42eb71725797aad49fd[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: win10 <wilsoncabrera307@gmail.com>
+Date:   Tue Nov 12 22:47:13 2024 -0300
+
+    Se hizo el frontend de la web de edulab, home listo, secciones de matematicasintro,quimicaintro, fisicaintro listo. colores, fondos, logo, barra de navegacion y diseño responsive. Para la presentacion del 15 de noviembre
+
+[33mcommit d99064ce3cb143ecb3402984cc522a9491ab600b[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: RolandoSarmiento <rolandohebers.rs@gmail.com>
+Date:   Mon Nov 11 15:31:38 2024 -0300
+
+    Reestructuracion de archivos y Reutilizacion de Codigos como Footer.js o NavBar.js
+
+[33mcommit a20385bd12c96855e5fd8d3d8a713dbd93dffb78[m
+Author: RolandoSarmiento <rolandohebers.rs@gmail.com>
+Date:   Mon Nov 11 01:14:59 2024 -0300
+
+    resolucion de conflictos
+
+[33mcommit 915cd4ddeb9d7f037cdbbe340992a5359c3f1e4b[m
+Merge: a7a7a81 0a6d4d2
+Author: RolandoSarmiento <rolandohebers.rs@gmail.com>
+Date:   Mon Nov 11 01:04:14 2024 -0300
+
+    Merge branch 'master' of https://github.com/Rolandoheber2489/EduLabSecundARIA
+
+[33mcommit a7a7a8142eea25bfe8c002e542dfad3df3786d17[m
+Author: RolandoSarmiento <rolandohebers.rs@gmail.com>
+Date:   Mon Nov 11 01:01:45 2024 -0300
+
+    Guardar cambios en Home.js antes del Merge
+
+[33mcommit 7c4aedbb9157444c7c0315e49c32e656d0497a1f[m
+Author: RolandoSarmiento <rolandohebers.rs@gmail.com>
+Date:   Mon Nov 11 00:58:47 2024 -0300
+
+    Guardar cambios locales antes de actualizar
+
+[33mcommit 0a6d4d252546ef68462831351bb9edd3b69c244a[m
+Author: Lucas <109881951+LucasIsac@users.noreply.github.com>
+Date:   Mon Nov 11 00:16:08 2024 -0300
+
+    Add files via upload
+
+[33mcommit 4bc453e16469ea95f4699306c2f103a9938fa17e[m
+Author: Lucas <109881951+LucasIsac@users.noreply.github.com>
+Date:   Sun Nov 10 23:55:19 2024 -0300
+
+    arrglo de link App.js
+
+[33mcommit 160503ec5160321b10dd6a41ccc8588a298f90eb[m
+Author: Lucas <109881951+LucasIsac@users.noreply.github.com>
+Date:   Sun Nov 10 23:54:02 2024 -0300
+
+    arreglo de link Home.js
+
+[33mcommit 951a045f45ee8d845b24839eee92234f152a0a29[m
+Author: Lucas <109881951+LucasIsac@users.noreply.github.com>
+Date:   Sun Nov 10 23:39:18 2024 -0300
+
+    Add files via upload
+
+[33mcommit 8ab775aa9bfa4e509ec9e13252732f55fec93d62[m
+Author: RolandoSarmiento <rolandohebers.rs@gmail.com>
+Date:   Sat Nov 2 02:19:07 2024 -0300
+
+    cambios en Quimica.js
+
+[33mcommit ecaf63ba098729d3246e95e54415377e17e81f0a[m
+Merge: c3a4214 b16ba25
+Author: RolandoSarmiento <rolandohebers.rs@gmail.com>
+Date:   Sat Nov 2 02:14:37 2024 -0300
+
+    Merge branch 'master' of https://github.com/Rolandoheber2489/EduLabSecundARIA
+
+[33mcommit c3a4214eecf1459bad963b2b7ed10971b9d93bbf[m
+Author: RolandoSarmiento <rolandohebers.rs@gmail.com>
+Date:   Sat Nov 2 02:10:35 2024 -0300
+
+    Guardar cambios en Quimica.js antes de actualizar
+
+[33mcommit b16ba25097b393ddcb5f551f145943dd7f616874[m
+Author: martinprlt <martinprlt02@gmail.com>
+Date:   Fri Nov 1 02:26:35 2024 -0300
+
+    Creacion de archivo QuimicaIntro, siguiendo el Wareframing, que lleva a la pagina principal Quimica con una breve descripcion de esta y del simulador 3D presentado.
+
+[33mcommit 70ad5b61a00bf49dba0af9a8624194f32f53d760[m
+Author: RolandoSarmiento <rolandohebers.rs@gmail.com>
+Date:   Thu Oct 24 12:48:17 2024 -0300
+
+    Mejoras en legibilidad del codigo y se agregaron nuevos componentes(Modelos 3d,integracion de cámara, ademas de integrar las paginas que hicieron los chicos de sem I con react-router-dom)
+
+[33mcommit 61d852926cfc65d26b0d7b17809761a0ad2c7058[m
+Author: RolandoSarmiento <rolandohebers.rs@gmail.com>
+Date:   Wed Oct 9 18:37:37 2024 -0300
+
+    Initialize project using Create React App
