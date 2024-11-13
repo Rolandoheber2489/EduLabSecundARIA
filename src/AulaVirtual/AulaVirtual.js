@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Componentes/NavBar";
-import "/Users/belen/Desktop/Rolando/seminario/EduLab-SecundARIA/edulab-secundaria/src/Estilos/App.css";
+//import "/Users/belen/Desktop/Rolando/seminario/EduLab-SecundARIA/edulab-secundaria/src/Estilos/App.css";
+import '../Estilos/App.css';
+
 
 const AulaVirtual = () => {
   return (

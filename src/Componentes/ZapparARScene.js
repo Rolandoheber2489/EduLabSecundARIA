@@ -1,8 +1,10 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { ZapparCanvas, ZapparCamera } from "@zappar/zappar-react-three-fiber";
 import { useGLTF } from "@react-three/drei"; // Importamos useGLTF
-import "/Users/belen/Desktop/Rolando/seminario/EduLab-SecundARIA/edulab-secundaria/src/Estilos/Paginas.css";
+//import "/Users/belen/Desktop/Rolando/seminario/EduLab-SecundARIA/edulab-secundaria/src/Estilos/Paginas.css";
 //import GestureControl from './GestureControl';
+import '../Estilos/Paginas.css';
+  
 
 const Model = ({ position, rotation, scale }) => {
   const { scene } = useGLTF("/Images/earth.glb"); // Ruta a tu modelo GLB

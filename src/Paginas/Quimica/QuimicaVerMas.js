@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "/Users/belen/Desktop/Rolando/seminario/EduLab-SecundARIA/edulab-secundaria/src/Estilos/Paginas.css";
+//import "/Users/belen/Desktop/Rolando/seminario/EduLab-SecundARIA/edulab-secundaria/src/Estilos/Paginas.css";
 import Navbar from "../../Componentes/NavBar";
+import "../../Estilos/Paginas.css";
+
 
 const QuimicaVerMas = () => {
   const TopicCard = ({ title, description }) => {

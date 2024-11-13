@@ -1,22 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../Componentes/NavBar";
-import Footer from "../../Componentes/Footer"; // Importa el Footer
-import "/Users/belen/Desktop/Rolando/seminario/EduLab-SecundARIA/edulab-secundaria/src/Estilos/App.css";
+import Footer from "../../Componentes/Footer";
+import "../../Estilos/App.css";
 
 const subjects = [
   {
     to: "/MatematicasIntro",
-    img: "./Images/matematicas.png",
+    img: "./Images/matematicaRA.jpg",
     title: "Matemáticas",
   },
-  { to: "/FisicaIntro", img: "./Images/física.png", title: "Física" },
-  { to: "/QuimicaIntro", img: "./Images/quimica.png", title: "Química" },
+  { to: "/FisicaIntro", img: "./Images/fisicaRA.jpg", title: "Física" },
+  { to: "/QuimicaIntro", img: "./Images/quimicaRA.jpg", title: "Química" },
 ];
 
 const SubjectCard = ({ to, img, title }) => (
-  <div className="col-md-4">
-    <div className="card">
+  <div className="col-12 col-md-4 col-lg-3 mb-4">
+    <div className="card h-100">
       <Link to={to}>
         <img
           src={process.env.PUBLIC_URL + img}
@@ -25,7 +25,7 @@ const SubjectCard = ({ to, img, title }) => (
         />
       </Link>
       <div className="card-body">
-        <h5 className="card-title">
+        <h5 className="laboratorio">
           Laboratorio <strong>{title}</strong>
         </h5>
       </div>
@@ -35,9 +35,9 @@ const SubjectCard = ({ to, img, title }) => (
 
 const Home = () => {
   return (
-    <div className="container-home">
-      <div className="container text-center my-5">
-        <Navbar />
+    <div className="container-home d-flex flex-column">
+      <Navbar />
+      <div className="container-fluid text-center my-auto">
         <h1 className="display-4">Laboratorio Virtual</h1>
         <p className="lead">
           Espacio educativo que integra Realidad Aumentada e Inteligencia
@@ -47,13 +47,13 @@ const Home = () => {
         <Link to="/aula" className="btn btn-dark btn-lg my-4">
           Unirse al aula
         </Link>
-        <div className="row">
+        <div className="row justify-content-center">
           {subjects.map((subject, index) => (
             <SubjectCard key={index} {...subject} />
           ))}
         </div>
       </div>
-      <Footer /> {/* Usa el componente Footer aquí */}
+      <Footer />
     </div>
   );
 };

@@ -1,40 +1,165 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-main {
+.container-home {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Ocupa toda la altura de la ventana */
+  flex-direction: column;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  background-color: #f6f0fa;
 }
 
-/* styles.css */
-body,
-html {
-  margin: 0; /* Eliminar márgenes por defecto */
-  padding: 0; /* Eliminar padding por defecto */
-  height: 100%; /* Asegurar que el cuerpo y el html ocupen toda la altura */
-  display: flex; /* Usar flexbox para centrar */
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
-  background-color: #f6f0fa; /* Color de fondo (opcional) */
-
-  zoom: 1; /* Esto restablece el zoom a 100% */
-  min-width: 320px;
+.container-fluid {
+  flex: 1; /* Expande el contenido principal */
 }
 
 .card {
-  display: table-row;
-  border-radius: 5px;
-  width: 300px;
-  height: 300x;
-  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navbar {
-  display: flexbox;
-  margin-top: 200px;
-  border-radius: 10px;
-  background-color: white;
+.card-img-top {
+  border-radius: 8px 8px 0 0;
 }
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem; /* Ajuste de tamaño de fuente en pantallas pequeñas */
+  }
+
+  .lead {
+    font-size: 1rem; /* Ajuste de tamaño de texto descriptivo */
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-lg {
+    font-size: 1rem; /* Botón más pequeño en pantallas pequeñas */
+    padding: 0.5rem 1rem;
+  }
+}
+
+
+/*imagen de fondo
+/* Estilo para la página de inicio */
+.container-home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  background-image: url('../../public/Images/banner.jpg'); /* Ruta a tu imagen */
+  background-size: cover; /* Para que la imagen cubra toda la sección */
+  background-position: top center; /* Coloca la imagen justo en el límite superior */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  color: #fff; /* Asegura que el texto sea visible sobre el fondo */
+}
+
+
+.container-fluid {
+  flex: 1; /* Expande el contenido principal */
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Otros estilos ya existentes... */
+/*CARDS
+/* Limitar el tamaño máximo de las cards */
+/* Centrado de las cards */
+.row {
+  display: flex;
+  justify-content: center; /* Centra las cards horizontalmente */
+  flex-wrap: wrap; /* Permite que las cards se ajusten en varias filas si es necesario */
+}
+
+/* Limitar el tamaño máximo de las cards */
+.card {
+  max-width: 380px; /* Ajusta el valor según lo que necesites */
+  margin: 0 auto; /* Centra la card dentro de su contenedor */
+}
+
+.lead {
+  color: black; /* Pone el texto en color negro */
+}
+
+.display-4 {
+  color: black; /* Cambia el color a negro */
+  font-size: 1.5rem; /* Cambia el tamaño de la fuente (opcional) */
+}
+
+/* Clase para las tarjetas */
+/* Efecto inicial de la tarjeta */
+/* Efecto inicial de la tarjeta */
+/* Efecto inicial de la tarjeta */
+/* Efecto inicial de la tarjeta */
+/* Estilo base para las tarjetas */
+.card {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Transición para efectos */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff; /* Fondo blanco para las cards */
+  filter: grayscale(100%) contrast(100%); /* Blanco y negro al principio */
+}
+
+/* Efecto al pasar el cursor sobre la tarjeta */
+.card:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Añade una sombra más grande */
+  filter: grayscale(0%) contrast(120%); /* Se muestra en color con mayor contraste */
+}
+
+/* Efecto en el título al pasar el cursor */
+.card:hover .laboratorio {
+  color: #007bff; /* Cambia el color del texto */
+  text-shadow: 0 0 10px rgba(0, 123, 255, 0.8), 0 0 20px rgba(0, 123, 255, 0.6); /* Efecto neón */
+}
+
+
+
+
+/*barra de navegacion
+
+/* Barra de navegación personalizada */
+.custom-navbar {
+  background-color: #2d4552 !important; /* Color de fondo de la barra de navegación */
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: #ffffff !important; /* Color del texto en la navegación */
+}
+
+/* Cambiar el color del enlace al hacer hover */
+.custom-navbar .nav-link:hover {
+  color: #b4dc8c !important; /* Color del texto al hacer hover */
+}
+
+/* Cambiar el color del botón de búsqueda */
+.custom-navbar .btn-outline-success {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.custom-navbar .btn-outline-success:hover {
+  background-color: #850054 !important;
+  color: #2d4552 !important;
+  border-color: #2d4552 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+
+.custom-nav-items {
+  margin-left: auto; /* Esto debería mover los elementos a la derecha */
+  padding-right: 10px; /* Ajusta este valor según sea necesario */
+}
+
+/* Clase para mover los elementos de la barra de navegación a la derecha */
+.nav-items-right {
+  display: flex;
+  justify-content: flex-end; /* Mueve los elementos de la lista hacia la derecha */
+  width: 100%;
+}
+

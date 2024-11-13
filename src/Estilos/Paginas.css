@@ -1,76 +1,152 @@
-/* Estilo general para el contenedor de la página */
-.container {
-  display: grid;
-  margin: 100px auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+/* Paginas.css */
+
+/* Aplica un diseño de contenedor para la página completa */
+.page-container {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin-top: 0;
 }
 
-/* Estilo para la barra de navegación */
+/* Sección principal con la imagen de fondo */
+.background-image {
+  background-image: url('../../public/Images/matematicaintro.png'); /* Asegúrate que la ruta de la imagen sea correcta */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+  width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+  display: flex; /* Flexbox para centrar el contenido */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
 
-/* Estilo para el título de la página */
-.page-title {
-  font-size: 1em;
-  color: #de1f1f;
+/* Estilo para la caja de contenido */
+.content-box {
+  background-color: #f8f9fa; /* Fondo sólido, puedes cambiar el color */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 30px; /* Espacio interno para los elementos dentro de la caja */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+  margin-top: 5vh; /* Ajusta el margen superior si es necesario */
+  text-align: left; /* Alinea el texto dentro de la caja */
+  width: 1500px; /* Asegura que la caja ocupe todo el ancho disponible */
+  max-width: 800px; /* Limita el tamaño máximo de la caja */
+  margin-left: auto;
+  margin-right: 200px; /* Centra la caja horizontalmente */
+  opacity: 0.8; /* Opacidad de la caja (valor entre 0 y 1) */
+}
+
+/* Estilos para el título */
+.content-box h1 {
+  margin-bottom: 1rem;
+}
+
+/* Estilos para el párrafo */
+.content-box p {
+  margin-bottom: 1.5rem;
+}
+
+/* Estilos para los botones */
+.content-box .btn {
+  margin-top: 1rem; /* Espacio entre los botones */
+}
+
+/* Centra el contenido de texto y le da margen superior */
+.content-text {
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 10vh; /* Ajusta el margen superior según lo necesites */
 }
 
-/* Estilo para el botón de regreso */
-.return-button {
-  display: block;
-  margin: 10px 0 20px 0;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
-  color: #333;
-  transition: background-color 0.3s ease;
+/* Si quieres un mayor espacio, puedes usar algo como */
+.content-text h1 {
+  margin-bottom: 1rem; /* Ajusta el espacio entre el título y el párrafo */
 }
 
-.return-button:hover {
-  background-color: #ccc;
+.content-text p {
+  margin-bottom: 2rem; /* Ajusta el espacio entre el párrafo y los botones */
 }
 
-/* Estilo para el párrafo de descripción */
-.description {
-  font-size: 1.2em;
-  color: #555;
-  text-align: center;
-  max-width: 800px;
-  margin-bottom: 20px;
+/* Estilos para los botones */
+.btn-outline-dark, .btn-dark {
+  margin-top: 1rem; /* Añade algo de espacio entre los botones */
 }
 
-/* Estilo para el contenido principal */
-.main-content {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-}
-
-/* Descripción del átomo */
-.atom-description {
-  font-size: 1em;
-  color: #777;
-  text-align: center;
-  margin-top: 10px;
-  max-width: 600px;
-}
-
+/* Ajusta el tamaño del modelo 3D en el contenedor */
 .expand {
+  width: 100%; /* Asegúrate de que ocupe el ancho disponible */
+  max-width: 500px; /* Puedes ajustar este valor para hacer el modelo más grande */
+  height: 500px; /* Controla la altura del modelo */
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  width: 80%;
-  margin-top: 20px;
-  border: 1px solid #ddd;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el componente Matemáticas */
+
+/* Contenedor general */
+.matematicas-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centra el contenido */
+}
+
+/* Contenedor de las tarjetas de matemáticas */
+.matematicas-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+/* Estilos de las tarjetas */
+.matematicas-card {
+  width: 250px; /* Tamaño fijo o porcentual */
+  padding: 15px;
+  background-color: #f5f5f5;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.matematicas-main {
+  margin-top: 30px;
+}
+
+.matematicas-description {
+  font-size: 16px;
+  color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor principal */
+/* Contenedor principal */
+/* Cambiar el color de fondo de toda la página */
+.matematicas-container {
+  background-color: #b4dc8c; /* Color de fondo (puedes poner el color que desees) */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centra el contenido */
+}
+
+/* Aumentar el tamaño de la cámara o la escena AR */
+.zapparScene {
+  width: 100%;              /* Ocupa todo el ancho disponible */
+  height: 100vh;            /* Ocupa el 100% de la altura de la ventana */
+  display: flex;
+  justify-content: center;  /* Centra el contenido horizontalmente */
+  align-items: center;      /* Centra el contenido verticalmente */
+}
+
+.zapparCanvas {
+  width: 100%;              /* Asegura que el lienzo AR ocupe todo el ancho */
+  height: 100%;             /* Hace que el lienzo ocupe toda la altura */
 }

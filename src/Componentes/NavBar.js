@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-//import "../Estilos/App.css"; // Asegúrate de que la ruta sea correcta
+import "../Estilos/App.css"; // Asegúrate de que este archivo esté importado correctamente
 
-// Datos de los elementos de navegación
 const navItems = [
   { to: "/", label: "Iniciar sesión" },
   { to: "/estudiantes", label: "Estudiantes" },
@@ -11,11 +10,11 @@ const navItems = [
 ];
 
 const Navbar = () => (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <nav className="navbar navbar-expand-lg custom-navbar">
     <div className="container-fluid">
       <Link className="navbar-brand" to="/">
         <img
-          src={process.env.PUBLIC_URL + "/Images/Logo.png"} // Asegúrate de que la ruta del logo sea correcta
+          src={process.env.PUBLIC_URL + "/Images/EDULAB-logo-blanco.png"}
           className="card-img-top"
           alt="Logo"
           id="Logo"
@@ -34,7 +33,7 @@ const Navbar = () => (
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav ms-auto">
+        <ul className="navbar-nav nav-items-right"> {/* Aplica la clase aquí */}
           {navItems.map((item, index) => (
             <li className="nav-item" key={index}>
               <Link className="nav-link" to={item.to}>
@@ -50,9 +49,6 @@ const Navbar = () => (
             placeholder="Buscar"
             aria-label="Buscar"
           />
-          <button className="btn btn-outline-success" type="submit">
-            Buscar
-          </button>
         </form>
       </div>
     </div>
