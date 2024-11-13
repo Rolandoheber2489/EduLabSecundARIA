@@ -7,7 +7,9 @@ import "../../Estilos/Paginas.css"; // Importa los estilos globales
 
 const QuimicaIntro = () => {
   return (
-    <div style={{ width: "100%", marginTop: "0px", padding: "0", height: "100vh" }}>
+    <div
+      style={{ width: "100%", marginTop: "0px", padding: "0", height: "100vh" }}
+    >
       <Navbar />
       <section className="background-image" id="seccion-principal">
         <div className="row align-items-center" style={{ height: "100%" }}>
@@ -20,7 +22,7 @@ const QuimicaIntro = () => {
                 Explorá y aprende QUÍMICA de manera educativa e inmersiva.
               </p>
               <div className="d-flex justify-content-center justify-content-md-start">
-                <Link to="/QuimicaVerMas" className="btn btn-outline-dark me-2">
+                <Link to="#" className="btn btn-outline-dark me-2">
                   Ver más
                 </Link>
                 <Link to="/Quimica" className="btn btn-dark" id="iniciarBtn">

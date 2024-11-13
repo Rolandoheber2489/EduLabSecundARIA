@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Grafica from "../../Componentes/Grafica";
 import Navbar from "../../Componentes/NavBar";
 import Footer from "../../Componentes/Footer"; // Importa el componente Footer
-import ZapparARScene from "../../Componentes/ZapparARScene";
+import ZapparARSceneMath from "../../Componentes/ZapparARSceneMath";
 import "../../Estilos/Paginas.css"; // Aquí agregarás los estilos responsive
 
 const Matematicas = () => {
@@ -11,11 +10,14 @@ const Matematicas = () => {
     <div className="matematicas-container">
       {/* Barra de navegación */}
       <Navbar />
-      
+
       <header className="matematicas-header">
         <h1>Introducción a Matemáticas</h1>
-        <Link to="/" className="matematicas-btn btn btn-outline-secondary">
-          Volver
+        <Link
+          to="/MatematicasIntro"
+          className="matematicas-btn btn btn-outline-secondary"
+        >
+          Atrás
         </Link>
       </header>
 
@@ -26,7 +28,7 @@ const Matematicas = () => {
           teoría de números.
         </p>
       </section>
-      
+
       <section className="matematicas-cards-container">
         <div className="matematicas-card">
           <h3>Estructura de Funciones</h3>
@@ -54,15 +56,15 @@ const Matematicas = () => {
           </p>
         </div>
       </section>
-      
+
       <section className="matematicas-main">
-        <ZapparARScene />
+        <ZapparARSceneMath />
         <p className="matematicas-description">
           Representación gráfica de una función matemática, mostrando sus curvas
           y características.
         </p>
       </section>
-      
+
       {/* Pie de Página Reutilizable */}
       <Footer />
     </div>
@@ -70,4 +72,3 @@ const Matematicas = () => {
 };
 
 export default Matematicas;
-

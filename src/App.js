@@ -6,11 +6,10 @@ import AulaVirtual from "./AulaVirtual/AulaVirtual";
 import Matematicas from "./Paginas/Matematicas/Matematicas";
 import MatematicasIntro from "./Paginas/Matematicas/MatematicasIntro";
 import QuimicaIntro from "./Paginas/Quimica/QuimicaIntro";
-import ZapparARScene from "./Componentes/ZapparARScene"; // Importa tu componente
+import ZapparARScene from "./Componentes/ZapparARSceneMath"; // Importa tu componente
 import Quimica from "./Paginas/Quimica/Quimica";
-import Fisica from "./Paginas/Fisica/Fisica";
+import Fisicas from "./Paginas/Fisica/Fisica";
 import FisicaIntro from "./Paginas/Fisica/FisicaIntro";
-import QuimicaVerMas from "./Paginas/Quimica/QuimicaVerMas";
 
 function App() {
   return (
@@ -29,15 +28,13 @@ function App() {
           {/* Ruta para la página de Matemáticas */}
           <Route path="/FisicaIntro" element={<FisicaIntro />} />{" "}
           {/* Ruta para la página de FísicaIntro*/}
-          <Route path="/fisica " element={<Fisica />} />{" "}
+          <Route path="/Fisica" element={<Fisicas />} />{" "}
           {/* Ruta para la página de Física */}
           <Route path="/QuimicaIntro" element={<QuimicaIntro />} />{" "}
           {/* Ruta para la página de Quimica */}
           <Route path="/Quimica" element={<Quimica />} />{" "}
-          <Route path="/QuimicaVerMas" element={<QuimicaVerMas />} />{" "}
           {/* Ruta para la página principal */}
           <Route path="/zappar" element={<ZapparARScene />} />{" "}
-          {/* Ruta para la escena WebXR */}
         </Routes>
       </Router>
     </div>

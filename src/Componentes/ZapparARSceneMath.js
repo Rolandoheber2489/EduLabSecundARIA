@@ -1,14 +1,10 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { ZapparCanvas, ZapparCamera } from "@zappar/zappar-react-three-fiber";
 import { useGLTF } from "@react-three/drei"; // Importamos useGLTF
-//import "/Users/belen/Desktop/Rolando/seminario/EduLab-SecundARIA/edulab-secundaria/src/Estilos/Paginas.css";
-//import GestureControl from './GestureControl';
-import '../Estilos/Paginas.css';
-  
+import "../Estilos/Paginas.css"; // Puedes mejorar la organización del CSS
 
 const Model = ({ position, rotation, scale }) => {
-  const { scene } = useGLTF("/Images/earth.glb"); // Ruta a tu modelo GLB
-
+  const { scene } = useGLTF("/Images/matematicas.glb"); // Ruta a tu modelo GLB
   return (
     <primitive
       object={scene}
@@ -19,9 +15,9 @@ const Model = ({ position, rotation, scale }) => {
   );
 };
 
-const ZapparARScene = () => {
-  const [position, setPosition] = useState([1, -1, -7]);
-  const [rotation, setRotation] = useState([0, 0, 0]);
+const ZapparARSceneMath = () => {
+  const [position, setPosition] = useState([0, 0, -15]);
+  const [rotation, setRotation] = useState([0, -120, 0]);
   const [scale, setScale] = useState(1);
   const isDragging = useRef(false);
   const lastMousePosition = useRef({ x: 0, y: 0 });
@@ -82,122 +78,84 @@ const ZapparARScene = () => {
     setScale(value);
   }, []);
 
+  // Función para resetear valores
+  const resetTransformations = () => {
+    setPosition([0, 0, -15]);
+    setRotation([0, -120, 0]);
+    setScale(1);
+  };
+
   return (
     <div className="zapparScene">
       <ZapparCanvas>
         <ZapparCamera />
-        {/*<GestureControl />*/}
         <ambientLight intensity={2} />
         <directionalLight position={[5, 5, 5]} intensity={1.5} />
-
-        {/* Aquí utilizamos el modelo en lugar del cubo */}
         <Model
           position={position}
           rotation={rotation}
           scale={[scale, scale, scale]}
         />
       </ZapparCanvas>
+
       <div className="menu">
         <h3>Menú de Configuración</h3>
-        <div>
+        <div className="config-section">
           <h4>Posición</h4>
-          <label>
-            X:
-            <input
-              type="range"
-              min={-5}
-              max={5}
-              step={0.1}
-              value={position[0]}
-              onChange={(e) =>
-                handlePositionChange(0, parseFloat(e.target.value))
-              }
-            />
-          </label>
-          <label>
-            Y:
-            <input
-              type="range"
-              min={-5}
-              max={5}
-              step={0.1}
-              value={position[1]}
-              onChange={(e) =>
-                handlePositionChange(1, parseFloat(e.target.value))
-              }
-            />
-          </label>
-          <label>
-            Z:
-            <input
-              type="range"
-              min={-10}
-              max={0}
-              step={0.1}
-              value={position[2]}
-              onChange={(e) =>
-                handlePositionChange(2, parseFloat(e.target.value))
-              }
-            />
-          </label>
+          {["X", "Y", "Z"].map((axis, index) => (
+            <label key={axis}>
+              {axis}:
+              <input
+                type="range"
+                min={-5}
+                max={5}
+                step={0.1}
+                value={position[index]}
+                onChange={(e) =>
+                  handlePositionChange(index, parseFloat(e.target.value))
+                }
+              />
+            </label>
+          ))}
         </div>
-        <div>
+
+        <div className="config-section">
           <h4>Rotación (grados)</h4>
-          <label>
-            X:
-            <input
-              type="range"
-              min={-180}
-              max={180}
-              step={1}
-              value={rotation[0]}
-              onChange={(e) =>
-                handleRotationChange(0, parseFloat(e.target.value))
-              }
-            />
-          </label>
-          <label>
-            Y:
-            <inpu
-              t
-              type="range"
-              min={-180}
-              max={180}
-              step={1}
-              value={rotation[1]}
-              onChange={(e) =>
-                handleRotationChange(1, parseFloat(e.target.value))
-              }
-            />
-          </label>
-          <label>
-            Z:
-            <input
-              type="range"
-              min={-180}
-              max={180}
-              step={1}
-              value={rotation[2]}
-              onChange={(e) =>
-                handleRotationChange(2, parseFloat(e.target.value))
-              }
-            />
-          </label>
+          {["X", "Y", "Z"].map((axis, index) => (
+            <label key={axis}>
+              {axis}:
+              <input
+                type="range"
+                min={-180}
+                max={180}
+                step={1}
+                value={rotation[index]}
+                onChange={(e) =>
+                  handleRotationChange(index, parseFloat(e.target.value))
+                }
+              />
+            </label>
+          ))}
         </div>
-        <div>
+
+        <div className="config-section">
           <h4>Escala</h4>
           <input
             type="range"
-            min={5}
-            max={15}
-            step={1}
+            min={0}
+            max={2}
+            step={0.1}
             value={scale}
             onChange={(e) => handleScaleChange(parseFloat(e.target.value))}
           />
+        </div>
+
+        <div className="config-section">
+          <button onClick={resetTransformations}>Resetear</button>
         </div>
       </div>
     </div>
   );
 };
 
-export default ZapparARScene;
+export default ZapparARSceneMath;
