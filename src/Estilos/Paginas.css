@@ -127,15 +127,25 @@
 
 
 
+
 /* Contenedor principal */
 /* Contenedor principal */
 /* Cambiar el color de fondo de toda la página */
+
+
 .matematicas-container {
-  background-color: #b4dc8c; /* Color de fondo (puedes poner el color que desees) */
+  /*background-image: url('../../public/Images/IA.png'); /* Ruta a tu imagen */
+  background-color: rgb(255, 255, 255);
+/*background-color: aquamarine;
+  background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  background-position: center center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
   padding: 20px;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto; /* Centra el contenido */
 }
+
+
 
 /* Aumentar el tamaño de la cámara o la escena AR */
 .zapparScene {
@@ -149,4 +159,14 @@
 .zapparCanvas {
   width: 100%;              /* Asegura que el lienzo AR ocupe todo el ancho */
   height: 100%;             /* Hace que el lienzo ocupe toda la altura */
+}
+.matematicas-cards-container .col {
+  display: flex;
+  justify-content: center; /* Centra las tarjetas dentro de las columnas */
+}
+
+.matematicas-card {
+  display: flex;
+  flex-direction: column; /* Asegura que el contenido de la tarjeta se apile verticalmente */
+  justify-content: space-between;
 }
