@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Magnetismo from "../../Componentes/Magnetismo";
 import Navbar from "../../Componentes/NavBar";
 import Footer from "../../Componentes/Footer";
-import '../../Estilos/Paginas.css';
+import "../../Estilos/Paginas.css";
 
 const FisicaIntro = () => {
   return (
@@ -43,4 +43,3 @@ const FisicaIntro = () => {
 };
 
 export default FisicaIntro;
-
