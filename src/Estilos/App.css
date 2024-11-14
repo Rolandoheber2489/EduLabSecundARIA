@@ -117,8 +117,6 @@
 
 
 
-/*barra de navegacion
-
 /* Barra de navegación personalizada */
 .custom-navbar {
   background-color: #2d4552 !important; /* Color de fondo de la barra de navegación */
@@ -150,7 +148,6 @@
   font-weight: bold;
 }
 
-
 .custom-nav-items {
   margin-left: auto; /* Esto debería mover los elementos a la derecha */
   padding-right: 10px; /* Ajusta este valor según sea necesario */
@@ -161,5 +158,22 @@
   display: flex;
   justify-content: flex-end; /* Mueve los elementos de la lista hacia la derecha */
   width: 100%;
+  margin-right: 20px; /* Ajusta este valor para acercar los elementos de la barra al buscador */
 }
 
+/* Navbar items */
+.navbar-nav {
+  display: flex;
+  gap: 20px; /* Reduce el espacio entre los elementos */
+  justify-content: flex-end; /* Asegura que los elementos estén alineados a la derecha */
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold; /* Hace que el texto esté en negrita */
+  font-size: 18px;
+}
+
+/* Ajuste para mover el formulario de búsqueda más cerca */
+.custom-navbar .d-flex {
+  margin-left: 10px; /* Ajusta este valor para mover el formulario hacia la derecha y más cerca de los enlaces */
+}

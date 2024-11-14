@@ -40,10 +40,11 @@ const Home = () => {
       <div className="container-fluid text-center my-auto">
         <h1 className="display-4">Laboratorio Virtual</h1>
         <p className="lead">
-          Espacio educativo que integra Realidad Aumentada e Inteligencia
-          Artificial para experiencias interactivas en Matemática, Física y
-          Química.
-        </p>
+  Espacio educativo que integra <span className="bold-text"> Realidad Aumentada</span>  e <span className="bold-text">Inteligencia</span><br />
+  <span className="bold-text">Artificial</span> para experiencias interactivas en Matemática, Física y Química.
+</p>
+
+
         <Link to="/aula" className="btn btn-dark btn-lg my-4">
           Unirse al aula
         </Link>

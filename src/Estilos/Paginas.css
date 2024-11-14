@@ -15,7 +15,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
-  width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+  max-width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
   display: flex; /* Flexbox para centrar el contenido */
   justify-content: center; /* Centra el contenido horizontalmente */
   align-items: center; /* Centra el contenido verticalmente */
@@ -39,6 +39,10 @@
 /* Estilos para el título */
 .content-box h1 {
   margin-bottom: 1rem;
+}
+
+.bold-text {
+  font-weight: bold; /* Aplica negrita solo a las palabras con esta clase */
 }
 
 /* Estilos para el párrafo */
@@ -100,12 +104,44 @@
 
 /* Estilos de las tarjetas */
 .matematicas-card {
-  width: 250px; /* Tamaño fijo o porcentual */
-  padding: 15px;
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ajuste responsive */
+  max-width: 280px; /* Máximo ancho para un tamaño fijo */
+  padding: 20px;
+  background: linear-gradient(135deg, #ffffff, #e6f0ff); /* Gradiente sutil */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombras más suaves */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el mouse */
+  margin-top: 100px;
+  margin-bottom: 150px;
 }
+
+.matematicas-card:hover {
+  transform: translateY(-5px); /* Efecto flotante */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.matematicas-card .card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.matematicas-card .card-text {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
 
 .matematicas-main {
   margin-top: 30px;
@@ -134,23 +170,48 @@
 
 
 .matematicas-container {
-  /*background-image: url('../../public/Images/IA.png'); /* Ruta a tu imagen */
-  background-color: rgb(255, 255, 255);
-/*background-color: aquamarine;
-  background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-  background-position: center center; /* Centra la imagen en el contenedor */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  padding: 20px;
+  background: linear-gradient(45deg, #b3e5fc, #c5cae9, #bbdefb, #b2dfdb, #e1bee7, #c8e6c9, #d1c4e9);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+
+  /* Otros estilos */
+  padding: 0px;
   max-width: 100%;
-  margin: 0 auto; /* Centra el contenido */
+  margin: 0 auto;
 }
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.matematicas-header h1 {
+  font-size: 3rem; /* Tamaño más grande */
+  font-family: 'Roboto', sans-serif; /* Fuente moderna y limpia */
+  color: #2d4552; /* Color gris azulado */
+  text-align: center; /* Centra el texto */
+  letter-spacing: 4px; /* Espaciado entre las letras */
+  font-weight: 700; /* Peso de la fuente más grueso */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  padding: 20px 0; /* Añade espacio alrededor */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+}
+
+.matematicas-btn {
+  display: none; /* Oculta el botón */
+}
+
+
 
 
 
 /* Aumentar el tamaño de la cámara o la escena AR */
 .zapparScene {
   width: 100%;              /* Ocupa todo el ancho disponible */
-  height: 100vh;            /* Ocupa el 100% de la altura de la ventana */
+  height: 70vh;            /* Ocupa el 100% de la altura de la ventana */
   display: flex;
   justify-content: center;  /* Centra el contenido horizontalmente */
   align-items: center;      /* Centra el contenido verticalmente */
@@ -169,4 +230,81 @@
   display: flex;
   flex-direction: column; /* Asegura que el contenido de la tarjeta se apile verticalmente */
   justify-content: space-between;
+}
+
+
+.matematicas-header {
+  text-align: center; /* Centra el texto horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Espaciado opcional para dar margen al contenido */
+}
+
+.matematicas-intro {
+  text-align: center; /* Centra el texto horizontalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Agrega espacio alrededor del contenido si es necesario */
+}
+
+.matematicas-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f4f7fa; /* Color de fondo suave */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  margin: 30px auto;
+  max-width: 1200px; /* Limita el ancho máximo de la sección */
+}
+
+.matematicas-description {
+  font-size: 1.1em;
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 800px; /* Limita el ancho del texto */
+}
+
+.matematicas-description::before {
+  content: "📊 "; /* Icono antes del texto */
+  font-size: 1.4em;
+  margin-right: 10px;
+}
+
+.matematicas-main p {
+  font-size: 1.1em;
+  color: #555;
+  max-width: 850px;
+}
+
+.matematicas-main iframe { /* Si ZapparARSceneMath es un iframe o similar */
+  width: 100%;
+  max-width: 1000px; /* Limita el ancho */
+  height: 500px; /* Ajusta la altura de la representación */
+  border: none; /* Elimina el borde */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.matematicas-main h1 {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.matematicas-main h2 {
+  font-size: 1.6em;
+  font-weight: normal;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: center;
 }

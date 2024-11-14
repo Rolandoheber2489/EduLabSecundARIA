@@ -13,12 +13,12 @@ const Quimica = () => {
 
       <header className="matematicas-header">
         <h1>Quimica General e Inorgánica</h1>
-        <Link
+        {/*<Link
           to="/QuimicaIntro"
           className="matematicas-btn btn btn-outline-secondary"
         >
           Atrás
-        </Link>
+        </Link>*/}
       </header>
 
       <section className="matematicas-intro">
@@ -26,6 +26,14 @@ const Quimica = () => {
           La Química General e Inorgánica es el estudio de las propiedades de la
           materia, estructura atómica y molecular, enlaces químicos y reacciones
           químicas.
+        </p>
+      </section>
+
+      <section className="matematicas-main">
+        <ZapparARSceneChemical />
+        <p className="matematicas-description">
+          Representación gráfica de un átomo, destacando el núcleo y las órbitas
+          de los electrones.
         </p>
       </section>
 
@@ -60,13 +68,7 @@ const Quimica = () => {
         </div>
       </section>
 
-      <section className="matematicas-main">
-        <ZapparARSceneChemical />
-        <p className="matematicas-description">
-          Representación gráfica de un átomo, destacando el núcleo y las órbitas
-          de los electrones.
-        </p>
-      </section>
+
 
       {/* Pie de Página Reutilizable */}
       <Footer />

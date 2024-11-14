@@ -13,18 +13,25 @@ const Fisicas = () => {
       <Navbar />
       <header className="matematicas-header">
         <h1>Introducción a Fisica</h1>
-        <Link
+        {/*<Link
           to="/FisicaIntro"
           className="matematicas-btn btn btn-outline-secondary"
         >
           Atrás
-        </Link>
+        </Link>*/}
       </header>
       <section className="matematicas-intro">
         <p>
           La Física estudia los principios fundamentales del universo, como la
           energía, el movimiento, la mecánica y las leyes que rigen los
           fenómenos naturales.
+        </p>
+      </section>
+      <section className="matematicas-main">
+        <ZapparARScenePhysic />
+        <p className="matematicas-description">
+          Representación gráfica de una función física, mostrando las curvas y
+          los fenómenos asociados.
         </p>
       </section>
       <section className="matematicas-cards-container">
@@ -57,13 +64,7 @@ const Fisicas = () => {
           </p>
         </div>
       </section>
-      <section className="matematicas-main">
-        <ZapparARScenePhysic />
-        <p className="matematicas-description">
-          Representación gráfica de una función física, mostrando las curvas y
-          los fenómenos asociados.
-        </p>
-      </section>
+
       {/* Pie de Página Reutilizable */}
       <Footer /> {/* Usa el componente Footer aquí */}
     </div>

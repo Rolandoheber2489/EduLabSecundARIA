@@ -13,12 +13,15 @@ const Matematicas = () => {
 
       <header className="matematicas-header">
         <h1>Introducción a Matemáticas</h1>
-        <Link
-          to="/MatematicasIntro"
-          className="matematicas-btn btn btn-outline-secondary"
-        >
-          Atrás
-        </Link>
+{/* 
+  <Link
+    to="/MatematicasIntro"
+    className="matematicas-btn btn btn-outline-secondary"
+  >
+    Atrás
+  </Link>
+*/}
+
       </header>
 
       <section className="matematicas-intro">
@@ -26,6 +29,14 @@ const Matematicas = () => {
           Las Matemáticas abarcan conceptos fundamentales como la estructura de
           las funciones, el análisis geométrico, los sistemas algebraicos y la
           teoría de números.
+        </p>
+      </section>
+
+      <section className="matematicas-main">
+        <ZapparARSceneMath />
+        <p className="matematicas-description">
+          Representación gráfica de una función matemática, mostrando sus curvas
+          y características.
         </p>
       </section>
 
@@ -57,13 +68,7 @@ const Matematicas = () => {
         </div>
       </section>
 
-      <section className="matematicas-main">
-        <ZapparARSceneMath />
-        <p className="matematicas-description">
-          Representación gráfica de una función matemática, mostrando sus curvas
-          y características.
-        </p>
-      </section>
+
 
       {/* Pie de Página Reutilizable */}
       <Footer />
